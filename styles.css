@@ -3,5 +3,23 @@
 }
 
 body {
-    background-color: aquamarine;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #120323;
+    color: white;
+}
+
+aside {
+    background-color: #97bf04;
+}
+
+footer {
+    background-color: #d9043d;
+}
+
+figure img {
+    border: solid 5px #d9043d;
+    max-width: 100%;
 }
