@@ -1,25 +1,103 @@
-* {
+*{
     box-sizing: border-box;
 }
 
+
+
+
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px;
 }
 
 header {
     background-color: #120323;
-    color: white;
+    color: #97bf04;
+    padding: 20px;
+    display: flex;
+}
+
+main {
+    display: flex;
 }
 
 aside {
     background-color: #97bf04;
+    padding: 20px;
 }
 
 footer {
     background-color: #d9043d;
+    padding: 20px;
 }
+
 
 figure img {
     border: solid 5px #d9043d;
-    max-width: 100%;
+    max-width: 300px;
+    float: left;
+    margin: 10px;
 }
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/* Media Quaries */
+
+
+
+@media screen and (max-width: 1000px) {
+    #container {
+        flex-direction: column;
+    }
+
+    figure {
+        display: flex;
+    }
+
+    figure img {
+        max-width: 300px;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        font-size: .7rem;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    figure img {
+        max-width: 100%;
+    }
+
+    figure {
+        flex-direction: column;
+    }
+
+} 
+
+
