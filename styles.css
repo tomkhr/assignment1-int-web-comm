@@ -2,8 +2,95 @@
     box-sizing: border-box;
 }
 
+/* Mobile first approach */
+
+/* I realized that my previous CSS was written for desktop first. So I decided to re-write it using the mobile-first approach. The previous CSS code was commented out and placed at the very end of this CSS document as reference. */
 
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #97bf04;
+    background-color: #120323;
+    padding: 20px;
+    font-size: 0.8rem;
+    gap: 20px;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0 1rem 0;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+}
+
+figure img {
+    max-width: 100%;
+    border: solid 5px #d9043d;
+    margin: 20px;
+}
+
+aside {
+    background-color: #97bf04;
+    padding: 20px;
+}
+
+footer {
+    background-color: #d9043d;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .header-container {
+        flex-direction: row;
+        font-size: 1rem;
+    }
+
+    figure {
+        flex-direction: row;
+    }
+
+    figure img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px) {
+    #container {
+        flex-direction: row;
+    }
+
+    aside {
+        max-width: 30%;
+    }
+    /* Was struggling with trying to size the aside tag for 1000px+ as shown in the assignment screenshot. I thought there could be a more clever way to set it to be smaller then the caption that it's placed next to, but this is the best I could do. Would appreciate getting some feedback on whether there is a better method I could use.*/
+
+}
+
+
+
+/* Below is the previoius code - was not built with the mobile-first approach */
+
+/* 
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -60,8 +147,6 @@ figure img {
 
 
 
-/* Media Quaries */
-
 
 
 @media screen and (max-width: 1000px) {
@@ -98,6 +183,6 @@ figure img {
         flex-direction: column;
     }
 
-} 
+}  */
 
 
